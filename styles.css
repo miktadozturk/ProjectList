@@ -1,0 +1,274 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+body{
+  background: #DBD3C9;
+  color: #3d4c54;
+}
+
+#header{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #65A0A8;
+    padding: 1em;
+    font-family: ubuntu;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 40px;
+    margin-right: 8.5em;
+    color: white;
+}
+
+a{
+    font-size: 18px;
+    margin: 10px;
+    color: white;
+}
+
+a:hover{
+  cursor: pointer;
+  color: #e6e6e6;
+}
+
+h1:hover {
+  cursor: pointer;
+  color:#e8e8e8;
+}
+
+img{
+    width: 3.6em;
+    height: 3.3em;
+    margin-right: 1em;
+}
+
+#content {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  background:#e6e6e6;
+  max-width:1080px;
+  margin:auto;
+  font-family: ubuntu;
+}
+
+input[type="text"],
+input[type="date"]{
+  padding:.4em;
+}
+
+h3{
+  font-size:1.5em;
+}
+fieldset{
+  border: none;
+}
+.highlight{
+  border:solid 2px #c78d93;
+  background: #ffe9ec;
+}
+
+#addNewProject,
+#projectList {
+    margin: 1.5em;
+    padding:1em 3em;
+    border-radius: 1em;
+}
+
+label, input{
+  display:block;
+  margin:.5em 0;
+}
+
+button,
+input[type="submit"] {
+  padding:.5em;
+  border: 0;
+  border-radius:5px;
+}
+
+.radio,
+input[type="radio"]{
+  display:inline-block;
+}
+
+.project{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  background:#65A0A8;
+  padding:1em;
+  margin: 1em 0;
+  border-radius:5px;
+  min-width:320px;
+}
+
+.project button{
+  margin: .5em 0;
+  min-width: 200px;
+}
+
+form {
+  background:#92CEB3
+}
+
+.addNewTodo {
+  padding:1em;
+  margin:1em;
+}
+
+.todo {
+  padding:1em;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:220px;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="radio"]:hover {
+  background:#7b7f92;
+  cursor: pointer;
+  color:#e8e8e8;
+}
+
+.priority2 {
+  background:#deb076;
+}
+
+.priority1 {
+  background:#546A76;
+  color: #c1c1c1;
+}
+
+.priority3,
+.removeProject {
+  background: #ff99a4;
+  color: #9a2334;
+}
+
+.removeProject:hover {
+  background: #9a2334;
+}
+
+.complete {
+  background:#61bf5e;
+  color:#3d4c54;
+}
+
+.project h2{
+  font-size:3em;
+  text-align:center;
+}
+.project h3{
+  font-size:1.2em;
+  text-align:center;
+  color: #232323;
+}
+
+.collapsed ul,
+.collapsed form,
+.collapsed .hideProject {
+  display:none;
+}
+
+.collapsed .showProject {
+  display:inline-block;
+}
+
+.built .hideProject,
+undefined .hideProject {
+  display: inline-block;
+}
+
+.built .showProject,
+undefined .showProject {
+  display:none;
+}
+
+.messageBox {
+  display:flex;
+  margin:auto;
+  flex-direction:column;
+  align-items:center;
+  padding:70px 30px;
+  position:fixed;
+  top:30vh;
+  background:aliceblue;
+  border-radius:5px;
+  text-align:center;
+}
+
+.messageBox button {
+  margin: .5em 0 ;
+  min-width:50%;
+}
+
+@media screen and (min-width: 760px){
+  #projectList{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+  .project {
+    margin:1em;
+  }
+  .project form{
+    padding:;
+    width:100%;
+  }
+
+  .built {
+    width:100%;
+  }
+  .project ul {
+    width:100%;
+    display:flex;
+    justify-content:space-around;
+    flex-wrap:wrap;
+  }
+  .todo{
+    margin: 1em 0;
+    border-radius: 5px;
+  }
+  .project form {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+  }
+  fieldset{
+    width:40%;
+    padding:0em 0em 0 2em;
+    display:flex;
+  }
+
+  .project form input[type="submit"]{
+    width:80%;
+  }
+  .collapsed ul,
+  .collapsed form,
+  .collapsed .hideProject {
+    display:none;
+  }
+
+  .collapsed .showProject {
+    display:inline-block;
+  }
+
+  .built .hideProject,
+  undefined .hideProject {
+    display: inline-block;
+  }
+
+  .built .showProject,
+  undefined .showProject {
+    display:none;
+  }
+}
